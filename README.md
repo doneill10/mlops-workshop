@@ -15,6 +15,7 @@ Repository for educational workshop on building and deploying API endpoints for 
 2. Open it in your preferred editor (VS Code is nice, but whatever you prefer)
 3. Create a new branch -- if you wanted to name the branch `trying-it-out` you would open a new terminal and run `git checkout -b trying-it-out`
 4. Make some change on this branch -- it could be as simple as a blank newline or funny comment added to this README, or you could modify the training procedure used for the text model trained in `services/textemote` by commenting out line 4 in `services/textemote/build.sh`. I added that line to reduce the time it took to run the pipeline, but it causes the model to finish training before gradient descent is really finished, so it hurts performance. Yours can be better!
+# LETS GO LETS PLAYERS
 5. Save your change, commit it (use the editor's git interface or run `git commit -a -m "My first commit for the workshop!"` in the terminal)
 6. Push your change -- assuming you named your branch `trying-it-out` you'll run `git push origin trying-it-out`. You can ensure that your forked repo is the remote (rather than the original) by running `git remote -v` and making sure that `origin` is on your GitHub profile.
 7. Go to your GitHub repo in the browser and click Pull Requests in the bar above the code. You want to create a pull request that merges the branch you pushed into your `main` branch.
