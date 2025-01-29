@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71dd1d5-a1d8-41a0-9873-c3b1daedb306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="d71dd1d5-a1d8-41a0-9873-c3b1daedb306" name="Changes" comment="tRYING THINGS OUT">
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/ecs-task-def.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/HelloWorld/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mlops-workshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mlops-workshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +28,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "doneill10"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;doneill10&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/doneill10/mlops-workshop.git",
-    "accountId": "8602abdb-c1be-4394-a031-cc35f9caeee9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/doneill10/mlops-workshop.git&quot;,
+    &quot;accountId&quot;: &quot;8602abdb-c1be-4394-a031-cc35f9caeee9&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2sGOz97vxfFGeqVh05ZKBdQA13e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,8 +50,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.python -m venv .venv.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "trying-it-out",
+    "last_opened_file_path": "C:/Users/donei/PycharmProjects/mlops-workshop/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +63,46 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\donei\PycharmProjects\mlops-workshop\services" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install -r requirements.txt" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="python -m venv .venv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mlops-workshop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="venv" />
+      <option name="PARAMETERS" value=".venv" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.python -m venv .venv" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,11 +119,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738078704213</updated>
-      <workItem from="1738078705346" duration="834000" />
+      <workItem from="1738078705346" duration="2978000" />
+      <workItem from="1738165813334" duration="792000" />
+      <workItem from="1738171746857" duration="1911000" />
     </task>
+    <task id="LOCAL-00001" summary="tRYING THINGS OUT">
+      <option name="closed" value="true" />
+      <created>1738084606012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738084606012</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tRYING THINGS OUT">
+      <option name="closed" value="true" />
+      <created>1738084611439</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738084611439</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tRYING THINGS OUT">
+      <option name="closed" value="true" />
+      <created>1738084638739</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738084638739</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tRYING THINGS OUT" />
+    <option name="LAST_COMMIT_MESSAGE" value="tRYING THINGS OUT" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mlops_workshop$main.coverage" NAME="main Coverage Results" MODIFIED="1738172787934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services/HelloWorld/app" />
+    <SUITE FILE_PATH="coverage/mlops_workshop$python__m_venv__venv.coverage" NAME="python -m venv .venv Coverage Results" MODIFIED="1738173098242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
